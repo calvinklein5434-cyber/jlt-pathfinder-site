@@ -56,7 +56,43 @@ const Hero = () => {
       </nav>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 md:px-8 pt-20 pb-32">
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 md:px-8 pt-10 pb-32">
+        {/* Lead Educator Profile */}
+        <div className="mb-16 max-w-4xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+            {/* Educator Image */}
+            <div className="flex-shrink-0">
+              <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden shadow-hero border-4 border-primary/30">
+                <img 
+                  src="/lovable-uploads/cb2f6ffc-195a-4d19-a086-e47ef4f3b2b3.png" 
+                  alt="Lead Educator - Expert Legal Professional" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Educator Info */}
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Lead Educator</h2>
+              <div className="text-lg md:text-xl text-primary font-semibold mb-4">B.Com, M.Com + LLB</div>
+              
+              <div className="flex items-center justify-center md:justify-start space-x-2 mb-4">
+                <div className="bg-primary/20 backdrop-blur-sm rounded-lg px-4 py-2 border border-primary/30">
+                  <div className="text-2xl md:text-3xl font-bold text-primary">15+</div>
+                  <div className="text-sm text-gray-300">Years Experience</div>
+                </div>
+              </div>
+
+              <p className="text-gray-300 max-w-lg leading-relaxed">
+                Expert legal educator with extensive experience in bar examination preparation, 
+                legal drafting, and judicial training. Dedicated to empowering the next generation 
+                of legal professionals with practical knowledge and strategic insights.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Hero Content */}
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block">Empowering</span>
@@ -64,8 +100,8 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Expert legal education with 15+ years of experience in bar examination preparation, 
-            legal drafting, and judicial training.
+            Professional legal education with comprehensive training in bar examination preparation, 
+            legal drafting, and judicial excellence.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
