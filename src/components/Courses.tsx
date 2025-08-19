@@ -44,7 +44,7 @@ const Courses = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Our <span className="gradient-gold bg-clip-text text-transparent">Courses</span>
+            Our <span className="gradient-gold bg-clip-text text-transparent">Live Interactive Masterclass</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive legal education programs designed to excel in competitive examinations and professional practice.
@@ -103,7 +103,7 @@ const Courses = () => {
 
         <div className="text-center mt-12">
           <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Courses
+            View All Live Interactive Masterclass
           </Button>
         </div>
       </div>

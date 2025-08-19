@@ -86,7 +86,7 @@ const Footer = () => {
                   className="justify-start text-card-foreground hover:text-primary"
                   onClick={() => scrollToSection('courses')}
                 >
-                  Courses
+                  Live Interactive Masterclass
                 </Button>
                 <Button 
                   variant="ghost" 
@@ -113,7 +113,7 @@ const Footer = () => {
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   onClick={() => scrollToSection('courses')}
                 >
-                  Explore Courses
+                  Explore Live Interactive Masterclass
                 </Button>
               </div>
             </Card>

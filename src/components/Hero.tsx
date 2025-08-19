@@ -31,7 +31,7 @@ const Hero = () => {
             className="nav-link flex items-center space-x-2"
           >
             <BookOpen className="w-4 h-4" />
-            <span>Courses</span>
+            <span>Live Interactive Masterclass</span>
           </button>
           <button 
             onClick={() => scrollToSection('webinars')} 
@@ -84,9 +84,7 @@ const Hero = () => {
               </div>
 
               <p className="text-gray-300 max-w-lg leading-relaxed">
-                Expert legal educator with extensive experience in bar examination preparation, 
-                legal drafting, and judicial training. Dedicated to empowering the next generation 
-                of legal professionals with practical knowledge and strategic insights.
+                Guiding law aspirants with the right strategy, clear concepts, and confidence to thrive in the legal field.
               </p>
             </div>
           </div>
@@ -100,7 +98,7 @@ const Hero = () => {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-card"
             >
-              Explore Courses
+              Explore Live Interactive Masterclass
             </Button>
             <Button 
               onClick={() => scrollToSection('about')}
@@ -134,7 +132,7 @@ const Hero = () => {
               <BookOpen className="w-8 h-8 text-primary" />
             </div>
             <div className="text-3xl font-bold text-white mb-2">10+</div>
-            <div className="text-gray-300">Expert Courses</div>
+            <div className="text-gray-300">Expert Live Interactive Masterclass</div>
           </div>
         </div>
       </div>
