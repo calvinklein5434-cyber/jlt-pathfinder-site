@@ -96,9 +96,10 @@ const Hero = () => {
             <Button 
               onClick={() => scrollToSection('courses')}
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-card"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-4 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 shadow-card"
             >
-              Explore Live Interactive Masterclass
+              <span className="hidden sm:inline">Explore Live Interactive Masterclass</span>
+              <span className="sm:hidden">Explore Masterclass</span>
             </Button>
             <Button 
               onClick={() => scrollToSection('about')}
