@@ -70,41 +70,41 @@ const Footer = () => {
 
           {/* Quick Links & Contact Form */}
           <div>
-            <Card className="p-8 bg-card">
+            <Card className="p-8 bg-card border-0">
               <h3 className="text-2xl font-bold text-card-foreground mb-6">Quick Links</h3>
               
-              <div className="grid grid-cols-2 gap-4 mb-8">
+              <div className="space-y-3 mb-8">
                 <Button 
                   variant="ghost" 
-                  className="justify-start text-card-foreground hover:text-primary"
+                  className="w-full justify-start text-card-foreground hover:text-primary hover:bg-transparent p-0 h-auto"
                   onClick={() => scrollToSection('home')}
                 >
                   Home
                 </Button>
                 <Button 
                   variant="ghost" 
-                  className="justify-start text-card-foreground hover:text-primary"
+                  className="w-full justify-start text-card-foreground hover:text-primary hover:bg-transparent p-0 h-auto"
                   onClick={() => scrollToSection('courses')}
                 >
                   Live Interactive Masterclass
                 </Button>
                 <Button 
                   variant="ghost" 
-                  className="justify-start text-card-foreground hover:text-primary"
+                  className="w-full justify-start text-card-foreground hover:text-primary hover:bg-transparent p-0 h-auto"
                   onClick={() => scrollToSection('webinars')}
                 >
                   Webinars
                 </Button>
                 <Button 
                   variant="ghost" 
-                  className="justify-start text-card-foreground hover:text-primary"
+                  className="w-full justify-start text-card-foreground hover:text-primary hover:bg-transparent p-0 h-auto"
                   onClick={() => scrollToSection('about')}
                 >
                   About
                 </Button>
               </div>
 
-              <div className="bg-accent p-6 rounded-lg">
+              <div className="bg-accent p-6 rounded-lg border-0">
                 <h4 className="font-semibold text-accent-foreground mb-3">Ready to Start?</h4>
                 <p className="text-sm text-accent-foreground/80 mb-4">
                   Join thousands of successful legal professionals who started their journey with JLT Academy.
