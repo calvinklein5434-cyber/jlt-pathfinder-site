@@ -113,7 +113,7 @@ const Footer = () => {
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                   onClick={() => scrollToSection('courses')}
                 >
-                  Explore Live Interactive Masterclass
+                  Explore Masterclass
                 </Button>
               </div>
             </Card>
