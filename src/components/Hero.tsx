@@ -15,7 +15,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/2b76a1dd-7abe-4465-ba29-d5660cc0d79c.png" 
             alt="JLT Academy Logo" 
-            className="h-12 md:h-16 shadow-hero"
+            className="w-12 h-12 md:w-16 md:h-16 rounded-full shadow-hero object-cover"
           />
         </div>
         
