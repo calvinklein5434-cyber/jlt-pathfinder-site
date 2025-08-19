@@ -127,7 +127,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/2b76a1dd-7abe-4465-ba29-d5660cc0d79c.png" 
                 alt="JLT Academy Logo" 
-                className="h-8"
+                className="w-8 h-8 rounded-full object-cover"
               />
               <span className="text-xl font-bold">JLT Academy</span>
             </div>

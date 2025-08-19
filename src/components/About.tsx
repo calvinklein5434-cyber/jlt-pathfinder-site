@@ -1,7 +1,25 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Award, BookOpen, Users, Target, Scale, FileText } from "lucide-react";
+import { useState } from "react";
 
 const About = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    mobile: "",
+    email: "",
+    userType: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+    // Handle form submission logic here
+  };
+
   const specialties = [
     {
       icon: Scale,
@@ -62,6 +80,83 @@ const About = () => {
               and comprehensive coverage of the new Indian legal system including Bharatiya Nyaya Sanhita, 
               Bharatiya Nagarik Suraksha Sanhita, and Bharatiya Sakshya Adhiniyam.
             </p>
+          </div>
+        </div>
+
+        {/* Registration Form */}
+        <div className="mt-20">
+          <div className="max-w-2xl mx-auto">
+            <Card className="p-8 shadow-card">
+              <h3 className="text-3xl font-bold text-center mb-8">Join JLT Academy</h3>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Name</Label>
+                    <Input
+                      id="name"
+                      type="text"
+                      placeholder="Enter your full name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      required
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="mobile">Mobile Number</Label>
+                    <Input
+                      id="mobile"
+                      type="tel"
+                      placeholder="Enter your mobile number"
+                      value={formData.mobile}
+                      onChange={(e) => setFormData({...formData, mobile: e.target.value})}
+                      required
+                    />
+                  </div>
+                </div>
+                
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    value={formData.email}
+                    onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    required
+                  />
+                </div>
+
+                <div className="space-y-4">
+                  <Label>I am a</Label>
+                  <RadioGroup 
+                    value={formData.userType} 
+                    onValueChange={(value) => setFormData({...formData, userType: value})}
+                    className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                  >
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="law-student" id="law-student" />
+                      <Label htmlFor="law-student">Law Student</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="judiciary-aspirant" id="judiciary-aspirant" />
+                      <Label htmlFor="judiciary-aspirant">Judiciary Aspirant</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="law-graduate" id="law-graduate" />
+                      <Label htmlFor="law-graduate">Law Graduate</Label>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <RadioGroupItem value="practicing-advocate" id="practicing-advocate" />
+                      <Label htmlFor="practicing-advocate">Practicing Advocate</Label>
+                    </div>
+                  </RadioGroup>
+                </div>
+
+                <Button type="submit" className="w-full">
+                  Register Now
+                </Button>
+              </form>
+            </Card>
           </div>
         </div>
 
